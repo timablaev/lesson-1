@@ -23,6 +23,13 @@ public class Main {
                 System.out.println(x);
             }
         }
-
+        long b = 524635; //число
+        int count = 0; //количество бит равных 1
+        for (int j=0; j<20; j++)
+        {
+            if ((b >> j) % 2 == 1)
+                count++;
+        }
+        System.out.println(count);
     }
 }
