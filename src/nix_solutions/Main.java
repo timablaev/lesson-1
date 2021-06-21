@@ -3,7 +3,12 @@ package nix_solutions;
 public class Main {
 
     public static void main(String[] args) {
-        int a = 347693485;
+        String str = "347693485";
+        String reverse = new StringBuffer(str).reverse().toString();
+        System.out.println("\nСтрока до реверса: " + str);
+        System.out.println("Строка в обратном порядке, после реверса: " + reverse);
+        int a = Integer.parseInt (reverse);
+        System.out.println(a);
         int i;
         int x;
         for ( i = 0; i < 9; i++) {
@@ -21,15 +26,10 @@ public class Main {
 
             else{
                 System.out.println(x);
+
+
             }
         }
-        long b = 524635; //число
-        int count = 0; //количество бит равных 1
-        for (int j=0; j<20; j++)
-        {
-            if ((b >> j) % 2 == 1)
-                count++;
-        }
-        System.out.println(count);
+
     }
 }
